@@ -302,7 +302,7 @@ cat > /etc/xray/trojangrpc.json << END
                     ],
                     "certificates": [
                         {
-                            "certificateFile": "/etc/v2ray/vray.crt",
+                            "certificateFile": "/etc/v2ray/v2ray.crt",
                             "keyFile": "/etc/v2ray/v2ray.key"
                         }
                     ]
