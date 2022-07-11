@@ -391,6 +391,10 @@ systemctl enable vmess-grpc
 systemctl restart vmess-grpc
 systemctl enable vless-grpc
 systemctl restart vless-grpc
+systemctl enable trgrpc.service
+systemctl start trgrpc.service
+systemctl restart xray.service
+
 #
 cd /usr/bin
 wget -O addgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/addgrpc.sh"
