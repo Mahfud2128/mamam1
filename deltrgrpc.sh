@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/IzhanV
+# My Telegram : https://t.me/gdstore2128
 # ==========================================
 #########################
 MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -42,5 +42,3 @@ echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo "Script By izhanworks"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-read -p "Press Enter For Back To Trojan Menu/ CTRL+C To Cancel : "
-menu-grpc
