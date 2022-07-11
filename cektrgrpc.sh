@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/IzhanV
+# My Telegram : https://t.me/gdstore2128
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -18,7 +18,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 MYIP=$(curl -sS ipv4.icanhazip.com)
 clear
 echo -n > /tmp/other.txt
-data=( `cat /etc/rare/xray/grpc/trojangrpc.json | grep '^###' | cut -d ' ' -f 2`);
+data=( `cat /etc/xray/trojangrpc.json | grep '^###' | cut -d ' ' -f 2`);
 echo "-----------------------------------------";
 echo "---------=[ Trojan Grpc Login ]=---------";
 echo "-----------------------------------------";
@@ -55,5 +55,5 @@ oth=$(cat /tmp/other.txt | sort | uniq | nl)
 echo "other";
 echo "$oth";
 echo "-----------------------------------------"
-echo "Script By Izhanworks"
+echo "Script By GDStore"
 rm -rf /tmp/other.txt
