@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/izhanV
+# My Telegram : https://t.me/gdstore2128
 # ==========================================
 DF='\e[39m'
 Bold='\e[1m'
@@ -21,7 +21,7 @@ LIGHT='\033[0;37m'
 #########################
 
 uuid=$(cat /proc/sys/kernel/random/uuid)
-domain=$(cat /root/domain)
+domain=$(cat /etc/v2ray/domain)
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[44;1;39m       ⇱ XRAY TROJAN GRPC ⇲        \E[0m"
@@ -41,13 +41,6 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
 	done
 
 read -p "Expired (days): " masaaktif
-read -p "SNI (BUG)     : " sni
-read -p "ADDRESS (BUG) : " sub
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "1. BUG as ADDRESS"
-echo "2. BUG as SNI"
-echo "3. BUG as BOTH"
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
 
 hariini=`date -d "0 days" +"%Y-%m-%d"`
@@ -66,9 +59,7 @@ echo -e "\E[44;1;39m       ⇱ XRAY TROJAN GRPC ⇲        \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
 echo -e "Remarks     : ${user}"
-echo -e "IP/Host     : ${MYIP}"
 echo -e "Domain      : ${domain}"
-echo -e "SNI bug     : bug.com"
 echo -e "Port        : ${tr}"
 echo -e "Key         : ${user}"
 echo -e "Created     : $hariini"
