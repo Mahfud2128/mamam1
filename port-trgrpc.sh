@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/izhanV
+# My Telegram : https://t.me/gdstore2128
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -18,7 +18,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
 clear
-tr="$(cat /etc/rare/xray/grpc/trojangrpc.json | grep port | sed 's/port//g'| sed 's/            "": //g' | sed 's/,//g')"
+tr="$(cat /etc/xray/trojangrpc.json | grep port | sed 's/port//g'| sed 's/            "": //g' | sed 's/,//g')"
 echo -e "======================================"
 
 echo -e "Change Port Trojan Grpc $tr"
@@ -31,7 +31,7 @@ exit 0
 fi
 cek=$(netstat -nutlp | grep -w $tr2)
 if [[ -z $cek ]]; then
-sed -i "s/$tr/$tr2/g" /etc/rare/xray/grpc/trojangrpc.json
+sed -i "s/$tr/$tr2/g" /etc/xray/trojangrpc.json
 iptables -D INPUT -m state --state NEW -m tcp -p tcp --dport $tr -j ACCEPT
 iptables -D INPUT -m state --state NEW -m udp -p udp --dport $tr -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport $tr2 -j ACCEPT
