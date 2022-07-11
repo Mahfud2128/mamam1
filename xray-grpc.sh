@@ -406,6 +406,7 @@ wget -O addtrgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/addtr
 wget -O deltrgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/deltrgrpc.sh"
 wget -O cektrgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/cektrgrpc.sh"
 wget -O renewtrgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/renewtrgrpc.sh"
+wget -O port-trgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/port-trgpc.sh"
 
 chmod +x addgrpc
 chmod +x delgrpc
@@ -416,6 +417,7 @@ chmod +x addtrgrpc
 chmod +x deltrgrpc
 chmod +x cektrgrpc
 chmod +x renewtrgrpc
+chmod +x port-trgrpc
 
 
 rm -f xray-grpc.sh
