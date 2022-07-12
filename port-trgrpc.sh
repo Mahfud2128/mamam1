@@ -32,6 +32,7 @@ fi
 cek=$(netstat -nutlp | grep -w $tr2)
 if [[ -z $cek ]]; then
 sed -i "s/$tr/$tr2/g" /etc/xray/trojangrpc.json
+sed -i "s/   - TrojanGrpc              : $tr/   - TrojanGrpc              : $tr2/g" /root/log-install.txt
 iptables -D INPUT -m state --state NEW -m tcp -p tcp --dport $tr -j ACCEPT
 iptables -D INPUT -m state --state NEW -m udp -p udp --dport $tr -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport $tr2 -j ACCEPT
