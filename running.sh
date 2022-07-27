@@ -357,9 +357,9 @@ Domen="$(cat /etc/v2ray/domain)"
 
 # Echoing Result
 echo -e ""
-echo -e "In Here Is Your VPS Information : " | lolcat 
-echo "-------------------------------------------------------------------------------" | lolcat 
-echo "Operating System Information :" | lolcat 
+echo -e "In Here Is Your VPS Information : " 
+echo "-------------------------------------------------------------------------------"  
+echo "Operating System Information :" 
 echo -e "VPS Type    : $typevps"
 echo -e "OS Arch     : $tipeos2"
 echo -e "Hostname    : $HOSTNAME"
@@ -370,21 +370,21 @@ echo -e "OS BASE     : $basedong"
 echo -e "OS TYPE     : Linux / Unix"
 echo -e "Bash Ver    : $versibash"
 echo -e "Kernel Ver  : $kernelku"
-echo "-------------------------------------------------------------------------------" | lolcat 
-echo "Hardware Information :" | lolcat 
+echo "-------------------------------------------------------------------------------" 
+echo "Hardware Information :" 
 echo -e "Processor   : $tipeprosesor"
 echo -e "Proc Core   : $totalcore"
 echo -e "Virtual     : $typevps"
 echo -e "Cpu Usage   : $cpu_usage"
-echo "-------------------------------------------------------------------------------" | lolcat 
-echo "System Status / System Information :" | lolcat 
+echo "-------------------------------------------------------------------------------" 
+echo "System Status / System Information :" 
 echo -e "Uptime      : $uptime ( From VPS Booting )"
 echo -e "Total RAM   : ${totalram}MB"
 echo -e "Avaible     : ${MEMORY}MB"
 echo -e "Download    : $downloadsize GB ( From Startup / VPS Booting )"
 echo -e "Upload      : $uploadsize GB ( From Startup / VPS Booting )"
-echo "-------------------------------------------------------------------------------" | lolcat 
-echo "Internet Service Provider Information :" | lolcat 
+echo "-------------------------------------------------------------------------------" 
+echo "Internet Service Provider Information :" 
 echo -e "Public IP   : $MYIP"
 echo -e "Domain      : $Domen"
 echo -e "ISP Name    : $NAMAISP"
@@ -392,15 +392,15 @@ echo -e "Region      : $REGION "
 echo -e "Country     : $COUNTRY"
 echo -e "City        : $CITY "
 echo -e "Time Zone   : $WAKTUE"
-echo "-------------------------------------------------------------------------------" | lolcat 
-echo "Time & Date & Location & Coordinate Information :" | lolcat 
+echo "-------------------------------------------------------------------------------" 
+echo "Time & Date & Location & Coordinate Information :" 
 echo -e "Location    : $COUNTRY"
 echo -e "Coordinate  : $koordinat"
 echo -e "Time Zone   : $WAKTUE"
 echo -e "Date        : $harini"
 echo -e "Time        : $jam ( WIB )"
-echo "-------------------------------------------------------------------------------" | lolcat 
-echo "System Status Information :" | lolcat 
+echo "-------------------------------------------------------------------------------" 
+echo "System Status Information :"
 echo -e "SSH / Tun   : $status_ssh"
 echo -e "OpenVPN     : $status_openvpn"
 echo -e "Dropbear    : $status_beruangjatuh"
@@ -423,5 +423,5 @@ echo -e "Wireguard   : $status_wg"
 echo -e "Vmess GRPC  : $status_vmessgrpc"
 echo -e "Vless GRPC  : $status_vlessgrpc"
 echo -e "Trojan GRPC : $status_trgrpc"
-echo "------------------------------------------------------------------------" | lolcat 
+echo "------------------------------------------------------------------------" 
 echo ""
